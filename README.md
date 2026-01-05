@@ -28,11 +28,11 @@ Generates social media posts using the Maua Real Estate Agency brand documents i
 
 Reply to other users' posts with contextual, brand-aligned comments:
 
-1. Find a post to reply to (get the status ID from the URL, e.g., `https://mastodon.social/@user/113453265378811915` (find a real post example))
+1. Find a post to reply to (get the status ID from the URL, e.g., `https://mastodon.social/@lilianngweta/115841460058086337`)
 2. Generate and post a reply:
-   - `python generate_social_posts.py --reply-to 113453265378811915 --visibility public`
+   - `python generate_social_posts.py --reply-to 115841460058086337 --visibility public`
 3. Generate multiple reply variations (dry-run):
-   - `python generate_social_posts.py --reply-to 113453265378811915 --reply-count 1 --dry-run`
+   - `python generate_social_posts.py --reply-to 115841460058086337 --reply-count 1 --dry-run`
 
 The reply generator:
 - Fetches the original post and conversation context
@@ -62,7 +62,7 @@ python generate_social_posts.py --platform mastodon --count 1 \
 
 Reply to a post with an attached image:
 ```bash
-python generate_social_posts.py --reply-to 113453265378811915 \
+python generate_social_posts.py --reply-to 115841460058086337 \
   --images --visibility public
 ```
 

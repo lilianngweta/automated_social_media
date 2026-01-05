@@ -21,7 +21,7 @@ Generates social media posts using the Maua Real Estate Agency brand documents i
    - `MASTODON_BASE_URL` (e.g. `https://mastodon.social`)
    - `MASTODON_ACCESS_TOKEN`
 3. Generate + publish:
-   - `python generate_social_posts.py --platform mastodon --count 5 --publish --visibility public --out posts.md`
+   - `python generate_social_posts.py --platform mastodon --count 1 --publish --visibility public --out posts.md`
 
 
 ## Reply to Mastodon posts
@@ -32,7 +32,7 @@ Reply to other users' posts with contextual, brand-aligned comments:
 2. Generate and post a reply:
    - `python generate_social_posts.py --reply-to 113453265378811915 --visibility public`
 3. Generate multiple reply variations (dry-run):
-   - `python generate_social_posts.py --reply-to 113453265378811915 --reply-count 3 --dry-run`
+   - `python generate_social_posts.py --reply-to 113453265378811915 --reply-count 1 --dry-run`
 
 The reply generator:
 - Fetches the original post and conversation context
@@ -49,13 +49,13 @@ This project can optionally generate an image per post using a fine-tuned Flux m
    - `REPLICATE_API_TOKEN`
    - Either `REPLICATE_MODEL_VERSION` (recommended) OR `REPLICATE_MODEL` (owner/name)
 3. Generate posts + images:
-   - `python generate_social_posts.py --platform mastodon --count 5 --images --image-dir generated_images --out posts.md`
+   - `python generate_social_posts.py --platform mastodon --count 1 --images --image-dir generated_images --out posts.md`
 
 ### Post to Mastodon with images
 
 Generate posts, create images, and publish to Mastodon with attached media:
 ```bash
-python generate_social_posts.py --platform mastodon --count 3 \
+python generate_social_posts.py --platform mastodon --count 1 \
   --images --image-aspect-ratio 1:1 --image-format png \
   --publish --visibility public
 ```
@@ -77,7 +77,7 @@ If you want a human-in-the-loop gate before anything posts to Mastodon, enable T
    - `TELEGRAM_BOT_TOKEN`
    - `TELEGRAM_CHAT_ID`
 4. Run with approval gate:
-   - `python generate_social_posts.py --platform mastodon --count 3 --images --publish --require-telegram-approval`
+   - `python generate_social_posts.py --platform mastodon --count 1 --images --publish --require-telegram-approval`
 
 You’ll receive a Telegram message for each draft. Reply with `approve <code>` or `reject <code>`.
 

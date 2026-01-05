@@ -11,7 +11,7 @@ Generates social media posts using the Maua Real Estate Agency brand documents i
    - `pip install -r requirements.txt`
 3. Configure env:
    - Copy `.env.example` to `.env` using command `cp .env.example .env` and set `OPENAI_API_KEY` and all the other required variables.
-   - 
+     
 
 ## Generate posts and publish to Mastodon
 

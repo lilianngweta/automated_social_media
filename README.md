@@ -7,7 +7,7 @@ Generates social media posts using the Maua Real Estate Agency brand documents i
 1. Create a virtualenv (optional but recommended):
    - `python -m venv .venv`
    - `source .venv/bin/activate`
-2. Install deps:
+2. Install requirements:
    - `pip install -r requirements.txt`
 3. Configure env:
    - Copy `.env.example` to `.env` using command `cp .env.example .env` and set `OPENAI_API_KEY` and all the other required variables.
@@ -88,3 +88,5 @@ You’ll receive a Telegram message for each draft. Reply with `approve <code>` 
 - If you use a non-OpenAI provider, set `OPENAI_BASE_URL` to an OpenAI-compatible endpoint.
 - For Replicate Flux model, the script sends common inputs (`prompt`, `aspect_ratio`, `output_format`) and you can pass additional inputs via `--replicate-input-json`.
 - Images are uploaded to Mastodon before posting (using `/api/v2/media` endpoint)
+
+  This project was done at [Sundai Club](https://research.sundai.club)

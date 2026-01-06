@@ -8,7 +8,7 @@ Automating the process of generating and posting content on social media platfor
    - `python -m venv .venv`
    - `source .venv/bin/activate`
 2. Install requirements:
-   - `pip install -r requirements.txt`
+   - `uv pip install -r requirements.txt`
 3. Configure env:
    - Copy `.env.example` to `.env` using command `cp .env.example .env` and set `OPENAI_API_KEY` and all the other required variables in `.env`.
      

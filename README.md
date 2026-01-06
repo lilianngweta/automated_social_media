@@ -1,6 +1,6 @@
 # Social Media Post Generator
 
-Automating the process of generating and posting content on social media platforms. Generates social media posts using the Maua Real Estate Agency brand documents in `docs/`.
+Using AI to automate the process of generating and posting content on social media platforms. Generates social media posts using the Maua Real Estate Agency brand documents in `docs/`.
 
 ## Setup
 
